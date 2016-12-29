@@ -322,7 +322,7 @@
             // var hv = self.creatMedia(u, false, p);
             // $(n).html(hv);
 
-            self.eventTester(hv, "play", function(){
+            self.eventTester(hv, "ended", function(){
                 self.sectionChange("home");
                 setTimeout(function(){
                     self.sectionChange("pro");
