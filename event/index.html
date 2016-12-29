@@ -302,7 +302,16 @@
             var hv = document.getElementById("homeVideo");
             hv.autoplay = true;
             
-            if(isAndroid){
+            $(".videoMask").on("click", function(){
+                vbl = 1;
+                hv.controls = true;
+                hv.play();
+                $(".videoMask").fadeOut("fast", function(){
+                    $("#homeVideo").css({"height": "100%"});
+                });
+            })
+
+            //if(isAndroid){
                 $(".videoMask").on("click", function(){
                     vbl = 1;
                     hv.controls = true;
@@ -311,12 +320,12 @@
                         $("#homeVideo").css({"height": "100%"});
                     });
                 })
-            }else{
-                vbl = 1;
-                hv.controls = false;
-                $(".videoMask").fadeOut();
-                $("#homeVideo").css({"height": "100%"});
-            }
+            // }else{
+            //     vbl = 1;
+            //     hv.controls = false;
+            //     $(".videoMask").fadeOut();
+            //     $("#homeVideo").css({"height": "100%"});
+            // }
 
 
             // var hv = self.creatMedia(u, false, p);
