@@ -3,6 +3,7 @@
 .vagrant
 puppet/
 node_modules/
+event/src/
 event/v2.html
 event/list.html
 event/media/test.mp4
