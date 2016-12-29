@@ -77,7 +77,7 @@
     <!-- 过度视频 -->
     <div id="commingsoon">
         <div class="videoCon">
-            <video width="100%" height="0" id="commingSoonVideo" preload loop playsinline webkit-playsinline src="asset/media/test.mp4" poster="asset/img/poster.jpg"></video>
+            <video width="100%" height="0" id="commingSoonVideo" preload loop playsinline webkit-playsinline src="video/test.mp4" poster="asset/img/poster.jpg"></video>
         </div>
     </div>
 
@@ -85,7 +85,7 @@
     <div class="section" id="video">
         <div class="videoMask"></div>
         <div class="videoCon">
-            <video width="100%" height="0" id="homeVideo" preload="auto" playsinline webkit-playsinline src="asset/media/test.mp4" poster="asset/img/poster.jpg"></video>
+            <video width="100%" height="0" id="homeVideo" preload="auto" playsinline webkit-playsinline src="video/test.mp4" poster="asset/img/poster.jpg"></video>
         </div>
     </div>
 
@@ -249,7 +249,7 @@
         this.init = function(){   // 初始化执行函数
             self.valentinoEvent();
             self.homeMedia();
-            //self.homeMedia(".videoCon", "asset/media/test.mp4", "asset/img/m-l-1.jpg");
+            //self.homeMedia(".videoCon", "video/test.mp4", "asset/img/m-l-1.jpg");
         };
         this.creatMedia = function(_id, _url, _ap, _poster){    // 创建视频
             var video = document.createElement("video"),
@@ -454,7 +454,7 @@ var listData = {
     "p1": {
         "type": "video",
         "pro": "asset/img/p-s-1.jpg",
-        "list": ["asset/media/test.mp4"],
+        "list": ["video/test.mp4"],
         "status": 0
     },
     "p2": {
