@@ -302,19 +302,19 @@
             var hv = document.getElementById("homeVideo");
             hv.autoplay = true;
             
-            $(".videoMask").on("click", function(){
-                vbl = 1;
-                hv.controls = true;
-                hv.play();
-                $(".videoMask").fadeOut("fast", function(){
-                    $("#homeVideo").css({"height": "100%"});
-                });
-            })
+            // $(".videoMask").on("click", function(){
+            //     vbl = 1;
+            //     hv.controls = true;
+            //     hv.play();
+            //     $(".videoMask").fadeOut("fast", function(){
+            //         $("#homeVideo").css({"height": "100%"});
+            //     });
+            // })
 
             //if(isAndroid){
                 $(".videoMask").on("click", function(){
                     vbl = 1;
-                    hv.controls = true;
+                    hv.controls = false;
                     hv.play();
                     $(".videoMask").fadeOut("fast", function(){
                         $("#homeVideo").css({"height": "100%"});
