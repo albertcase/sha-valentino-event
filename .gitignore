@@ -1,0 +1,8 @@
+# Ignore configuration files that may contain sensitive information.
+.DS_Store
+.vagrant
+puppet/
+node_modules/
+event/v2.html
+event/list.html
+event/media/test.mp4
