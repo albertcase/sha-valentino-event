@@ -584,9 +584,9 @@ function getInfo(key){
     infoSwiper.slideTo(0, 100, false);
 
     // info视频点击播放事件
-    var iv = document.getElementById("infoVideo");
-
+    
     $("#list").delegate(".infovideMask", "click", function(e){
+        var iv = document.getElementById("infoVideo");
         $(this).hide();
         iv.play();
         _hmt.push(['_trackEvent', 'media', '产品详细页面视频 ｜ info-video' ]);
