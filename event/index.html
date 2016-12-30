@@ -55,9 +55,20 @@
             browser.versions.iPhone || browser.versions.iPad){        
                    
           }else{
-            console.log("pc"); 
+            location.href = "pc.html"
           }
     </script>
+
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?d7d1af7688a53ead0361f6fbfe4c00c8";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
 </head>
 <body>
 
@@ -312,13 +323,17 @@
             // })
 
             //if(isAndroid){
-                $(".videoMask").on("click", function(){
+                $(".videoMask").on("click", function(e){
                     vbl = 1;
                     hv.controls = false;
                     hv.play();
                     $(".videoMask").fadeOut("fast", function(){
                         $("#homeVideo").css({"height": "100%"});
                     });
+
+                    _hmt.push(['_trackEvent', 'media', '引导页视频 ｜ home-video']);
+                    e.preventDefault();
+
                 })
             // }else{
             //     vbl = 1;
@@ -417,6 +432,8 @@ $("#pro .swiper-slide").delegate("a", "touchstart", function(e){
         counts = 0;
         tType = $(this).attr("data-type");
         reqa = requestAnimationFrame(counter);
+
+        _hmt.push(['_trackEvent', 'link', '点击产品 ｜' + tType ]);
         e.preventDefault();
 })
 
@@ -435,6 +452,7 @@ function csvideoFunStart(t){
     csv.play(); 
     $("#commingsoon").css({"visibility": "visible"}).fadeIn(); 
     $("#commingSoonVideo").css({"height": "100%"});
+    _hmt.push(['_trackEvent', 'media', '过渡视频 ｜ transition-video' ]);
 }
 
 function csvideoFunEnd(){
@@ -461,16 +479,16 @@ function csvideoFunEnd(){
 
 var listData = {
     "p1": {
-        "type": "video",
-        "pro": "asset/img/p-s-1.jpg",
-        "list": ["video/test.mp4"],
-        "status": 0
-    },
-    "p2": {
         "type": "pro",
-        "pro": "asset/img/p-s-2.jpg",
+        "pro": "asset/img/p-s-1.jpg",
         "list": ["asset/img/m-l-1.jpg"],
         "status": 1
+    },
+    "p2": {
+        "type": "video",
+        "pro": "asset/img/p-s-2.jpg",
+        "list": ["video/test.mp4"],
+        "status": 0
     },
     "p3": {
         "type": "pro",
@@ -550,6 +568,7 @@ function getInfo(key){
                                '<img src="'+ c +'" />' +
                            '</div>'
                 }).join("");
+                $(".infovideMask").removeClass("show");
             }
             
         }
@@ -570,14 +589,15 @@ function getInfo(key){
     $("#list").delegate(".infovideMask", "click", function(e){
         $(this).hide();
         iv.play();
-        e.preventDefault()
+        _hmt.push(['_trackEvent', 'media', '产品详细页面视频 ｜ info-video' ]);
+        e.preventDefault();
     })
     //$("#proSwiper").removeAttr("style");
      
 }
 
 
-$(".btn").on("click", function(){
+$(".btn").on("click", function(e){
     var proStatusVal = $("#pro-s").attr("data-status");
     if(proStatusVal == 0){
         $("#saleout").addClass('show transition');
@@ -586,10 +606,16 @@ $(".btn").on("click", function(){
     }else{
         $("#reservation").addClass('show transition');
     }
+
+    _hmt.push(['_trackEvent', 'btn', '二维码弹层状态 ｜ ' + proStatusVal ]);
+    e.preventDefault()
 })
 
 $(".buyBtn").on("click", function(){
-    $("#ec").addClass('show transition');
+    getInfo("p2");
+    rosso.sectionChange("list");
+    _hmt.push(['_trackEvent', 'btn', '立即抢购按钮 ｜ nowbuy' ]);
+    //$("#ec").addClass('show transition');
 })
 
 $(".qrcode").on("click", function(e){
@@ -613,6 +639,9 @@ pfun.loadingFnDoing(allimg, function(){
     $(".loading").css({"visibility": "hidden"});
     pfun.init();
 })
+
+
+
 
 
 </script>

@@ -4,7 +4,7 @@
 Vagrant.configure("2") do |config|
  
   config.vm.box = "ubuntu14.04-20150827"
-  config.vm.hostname = "sha-coach-xmas"
+  config.vm.hostname = "sha-valentino-event"
 
   
   config.vm.network :forwarded_port, guest: 80, host: 9225

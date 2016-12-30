@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>ROSSO VALENTINO</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="...">
+	<link rel="icon" href="/favicon3.ico" />
+	<script type="text/javascript" src="/event/asset/js/all.min.js"></script>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			width: 100%;
+			text-align: center;
+			height: 100%;
+			background: #000;
+		}
+
+		#con{
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			background: #000 url("/event/asset/img/pc.jpg") no-repeat center;
+			text-align: center;
+		}
+
+		#con img{
+			display: none;
+			float: left;
+		}
+
+
+
+	</style>
+	<script type="text/javascript">
+        var browser={  
+            versions:function(){   
+                   var u = navigator.userAgent, app = navigator.appVersion;   
+                   return {//移动终端浏览器版本信息   
+                        trident: u.indexOf('Trident') > -1, //IE内核  
+                        presto: u.indexOf('Presto') > -1, //opera内核  
+                        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核  
+                        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核  
+                        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端  
+                        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端  
+                        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器  
+                        iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器  
+                        iPad: u.indexOf('iPad') > -1, //是否iPad    
+                        webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部  
+                    };  
+                 }(),  
+                 language:(navigator.browserLanguage || navigator.language).toLowerCase()  
+        }   
+          
+          if(browser.versions.mobile || browser.versions.ios || browser.versions.android ||   
+            browser.versions.iPhone || browser.versions.iPad){        
+                 location.href = "index.html"  
+          }
+    </script>
+
+    <script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?d7d1af7688a53ead0361f6fbfe4c00c8";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
+</head>
+<body>
+<div id="con">
+	<img src="/event/asset/img/pc.jpg" />
+</div>
+
+<script type="text/javascript">
+function getHeight(){
+
+	if($(window).height() > 670){
+		$("#con img").hide()
+		$("#con").removeAttr("style");  
+	}else{
+		$("#con").css({"height": $(window).height(), "background": "none"});  
+
+		if(parseInt($(window).width()) > parseInt($('#con img').css('width'))){
+			$("#con img").css({"display":"inline-block","height": "100%", "width": "auto"}); 
+			$("#con img").css({"margin-left": (parseInt($(window).width())-parseInt($('#con img').css('width')))/2});
+		}else{
+			$("#con img").css({"display":"inline-block","height": "100%", "width": "auto"}); 
+			$("#con img").css({"margin-left": -(parseInt($('#con img').css('width'))-parseInt($(window).width()))/2});
+		}
+		
+	}
+	
+}
+
+
+var img = new Image();
+    img.src = "/event/asset/img/pc.jpg";
+    img.onload = function(){
+    	getHeight();
+    }
+
+
+
+$(window).resize(function(){
+ 	 getHeight()
+});
+</script>
+
+
+</body>
+</html>
