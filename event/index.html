@@ -51,12 +51,12 @@
                  language:(navigator.browserLanguage || navigator.language).toLowerCase()  
         }   
           
-          if(browser.versions.mobile || browser.versions.ios || browser.versions.android ||   
+        if(browser.versions.mobile || browser.versions.ios || browser.versions.android ||   
             browser.versions.iPhone || browser.versions.iPad){        
                    
-          }else{
+        }else{
             location.href = "pc.html"
-          }
+        }
     </script>
 
     <script>
@@ -311,7 +311,7 @@
         this.homeMedia = function(){
 
             var hv = document.getElementById("homeVideo");
-            hv.autoplay = true;
+            hv.autoplay = false;
             
             // $(".videoMask").on("click", function(){
             //     vbl = 1;
