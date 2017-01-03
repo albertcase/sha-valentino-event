@@ -183,7 +183,7 @@
             </dt>
             <dd>
                 <div class="modelInfo">
-                    <a href="javascript:rosso.sectionChange('pro');" class="close">
+                    <a href="javascript:;" class="close">
                         <img src="" sourcesrc="/event/asset/img/close.png" width="100%">
                     </a>
                     <a href="javascript:void(0);" class="btn reserveBtn">
@@ -587,7 +587,7 @@ function getInfo(key){
     
     $("#list").delegate(".infovideMask", "click", function(e){
         var iv = document.getElementById("infoVideo");
-        $(this).hide();
+        $(this).removeClass("show");
         iv.play();
         _hmt.push(['_trackEvent', 'media', '产品详细页面视频 ｜ info-video' ]);
         e.preventDefault();
@@ -642,6 +642,20 @@ pfun.loadingFnDoing(allimg, function(){
 
 
 
+
+$(".close").on("click", function(e){
+    var iv = document.getElementById("infoVideo");
+        
+        if(iv){
+           iv.pause(); 
+           $(".infovideMask").removeClass("show");
+        }
+
+        rosso.sectionChange('pro');
+
+        _hmt.push(['_trackEvent', 'link', '关闭link ｜ close' ]);
+        e.preventDefault();
+})
 
 
 </script>
