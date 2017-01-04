@@ -30,11 +30,11 @@
 
 
 var shareArr = {
-    "_title": '流光溢彩圣诞季，收下Coach “私人订制”礼！', //分享标题
-    "_desc": "收下Coach这份圣诞礼，定制属于你的时尚标签",    // 分享朋友圈的描述
-    "_desc_friend": "收下Coach这份圣诞礼，定制属于你的时尚标签",    // 分享好友的描述
+    "_title": '探索ROSSO VALENTINO系列', //分享标题
+    "_desc": "探索ROSSO VALENTINO系列",    // 分享朋友圈的描述
+    "_desc_friend": "纯粹优雅，柔美璀璨。独特之作，为您呈现。",    // 分享好友的描述
     "_link": window.location.host,    //分享的连接
-    "_imgUrl": "http://" + window.location.host + "/asset/img/share.jpg",   //分享的图片
+    "_imgUrl": "http://" + window.location.host + "/event/asset/img/share.jpg",   //分享的图片
     "_url": encodeURIComponent(window.location)//encodeURIComponent(window.location.href.split("#")[0]) //.replace('http%3A%2F%2F','')
 };
 
