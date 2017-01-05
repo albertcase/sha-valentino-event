@@ -595,18 +595,21 @@ function getInfo(key){
     
     $("#list").delegate(".infovideMask", "click", function(e){
         var iv = document.getElementById("infoVideo");
-        $(this).removeClass("show");
+        if($(".infovideMask").hasClass("show")){
+            $(".infovideMask").removeClass("show");
+        }
+        
         iv.play();
-        // rosso.eventTester(iv, "ended", function(){
-        //     if($(".infovideMask").hasClass("show")){
-        //         $(".infovideMask").addClass("show");
-        //     }
-        // });
-        // rosso.eventTester(iv, "pause", function(){
-        //     if($(".infovideMask").hasClass("show")){
-        //         $(".infovideMask").addClass("show");
-        //     }
-        // });
+        rosso.eventTester(iv, "ended", function(){
+            if(!$(".infovideMask").hasClass("show")){
+                $(".infovideMask").addClass("show");
+            }
+        });
+        rosso.eventTester(iv, "pause", function(){
+            if(!$(".infovideMask").hasClass("show")){
+                $(".infovideMask").addClass("show");
+            }
+        });
         _hmt.push(['_trackEvent', 'media', '产品详细页面视频 ｜ info-video' ]);
         e.preventDefault();
     })
