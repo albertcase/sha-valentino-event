@@ -556,6 +556,8 @@ function getInfo(key){
         if(b == key){
             if(a.type == "video"){ // a.type == "pro" || a.type == "video"
                 $(".modelInfo").addClass("proInfo");
+            }else if(a.type == "pro"){
+                $(".modelInfo").addClass("proInfo-2");
             }else{
                 $(".modelInfo").removeClass("proInfo");
             }
