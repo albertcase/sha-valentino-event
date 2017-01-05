@@ -557,8 +557,9 @@ function getInfo(key){
             if(a.type == "video"){ // a.type == "pro" || a.type == "video"
                 $(".modelInfo").addClass("proInfo");
             }else if(a.type == "pro"){
-                $(".modelInfo").addClass("proInfo-2");
+                $(".reserveBtn").addClass("btnpos");
             }else{
+                $(".reserveBtn").removeClass("btnpos");
                 $(".modelInfo").removeClass("proInfo");
             }
 
@@ -665,8 +666,8 @@ $(".close").on("click", function(e){
 })
 
 
-alert("W :" + $(window).width());
-alert("H :" + $(window).height());
+// alert("W :" + $(window).width());
+// alert("H :" + $(window).height());
 
 </script>
 

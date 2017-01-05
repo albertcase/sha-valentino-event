@@ -238,7 +238,7 @@ img { pointer-events: none; }*/
     background-size: 100% auto;
 }
 
-.btn.nowbuyBtn, .proInfo-2 .btn.reserveBtn{
+.btn.nowbuyBtn, .btn.reserveBtn.btnpos{
     bottom: 14%;
     display: none;
 }
