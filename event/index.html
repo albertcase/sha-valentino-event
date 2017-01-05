@@ -22,12 +22,12 @@
     <script type="text/javascript" src="http://valentinowechat.samesamechina.com/api/v1/js/60c4349e-c302-4313-9fa8-37a8ebd59853/wechat"></script>
     <style type="text/css">
         
-        /*.IIV::-webkit-media-controls-play-button,
+        .IIV::-webkit-media-controls-play-button,
         .IIV::-webkit-media-controls-start-playback-button {
             opacity: 0;
             pointer-events: none;
             width: 5px;
-        }*/
+        }
 
     </style>
 
@@ -266,7 +266,7 @@
             //self.homeMedia(".videoCon", "video/test.mp4", "asset/img/m-l-1.jpg");
         };
         this.creatMedia = function(_id, _url, _ap, _poster){    // 创建视频
-            var video = '<video width="100%" height="100%" id="'+_id+'" preload="auto" playsinline webkit-playsinline src="'+_url+'" poster="'+_poster+'"></video>'
+            var video = '<video width="100%" height="100%" id="'+_id+'" controls preload="auto" playsinline webkit-playsinline src="'+_url+'" poster="'+_poster+'"></video>'
             // var video = document.createElement("video"),
             //     w = window.innerWidth,
             //     h = window.innerHeight;
