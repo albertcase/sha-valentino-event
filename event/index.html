@@ -487,7 +487,7 @@ var listData = {
         "type": "pro",
         "pro": "/event/asset/img/p-s-1.jpg",
         "list": ["/event/asset/img/m-l-1.jpg"],
-        "status": 1
+        "status": 2
     },
     "p2": {
         "type": "video",
@@ -499,7 +499,7 @@ var listData = {
         "type": "pro",
         "pro": "/event/asset/img/p-s-3.jpg",
         "list": ["/event/asset/img/m-l-1.jpg"],
-        "status": 1
+        "status": 2
     },
     "m1": {
         "type": "model",
@@ -554,7 +554,7 @@ function getInfo(key){
 
     $.map(listData, function(a, b){
         if(b == key){
-            if(a.type == "pro" || a.type == "video"){
+            if(a.type == "video"){ // a.type == "pro" || a.type == "video"
                 $(".modelInfo").addClass("proInfo");
             }else{
                 $(".modelInfo").removeClass("proInfo");
