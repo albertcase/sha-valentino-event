@@ -17,8 +17,694 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="Keywords" content="">
 	<meta name="Description" content="...">
+    <link rel="stylesheet" type="text/css" href="/event/asset/css/all.min.css?v=01">
+    <script type="text/javascript" src="/event/asset/js/all.min.js"></script>
+    <script type="text/javascript" src="http://valentinowechat.samesamechina.com/api/v1/js/60c4349e-c302-4313-9fa8-37a8ebd59853/wechat"></script>
+    <style type="text/css">
+        
+        .IIV::-webkit-media-controls-play-button,
+        .IIV::-webkit-media-controls-start-playback-button {
+            opacity: 0;
+            pointer-events: none;
+            width: 5px;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+        // var browser={  
+        //     versions:function(){   
+        //            var u = navigator.userAgent, app = navigator.appVersion;   
+        //            return {//移动终端浏览器版本信息   
+        //                 trident: u.indexOf('Trident') > -1, //IE内核  
+        //                 presto: u.indexOf('Presto') > -1, //opera内核  
+        //                 webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核  
+        //                 gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核  
+        //                 mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端  
+        //                 ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端  
+        //                 android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器  
+        //                 iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器  
+        //                 iPad: u.indexOf('iPad') > -1, //是否iPad    
+        //                 webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部  
+        //             };  
+        //          }(),  
+        //          language:(navigator.browserLanguage || navigator.language).toLowerCase()  
+        // }   
+          
+        // if(browser.versions.mobile || browser.versions.ios || browser.versions.android ||   
+        //     browser.versions.iPhone || browser.versions.iPad){        
+                   
+        // }else{
+        //     location.href = "pc.html"
+        // }
+    </script>
+
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?d7d1af7688a53ead0361f6fbfe4c00c8";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
 </head>
 <body>
-test
+
+<div class="loading">
+    <div class="cssload-loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+
+<div id="dreambox">
+
+    <!-- 过度视频 -->
+    <div id="commingsoon">
+        <div class="videoCon">
+            <video width="100%" height="0" id="commingSoonVideo" preload loop playsinline webkit-playsinline src="/event/video/test.mp4" poster="/event/asset/img/poster.jpg"></video>
+        </div>
+    </div>
+
+    <!-- 首页视频 -->
+    <div class="section" id="video">
+        <div class="videoMask"></div>
+        <div class="videoCon">
+            <video width="100%" height="0" id="homeVideo" preload="auto" playsinline webkit-playsinline src="/event/video/test.mp4" poster="/event/asset/img/poster.jpg"></video>
+        </div>
+    </div>
+
+    <!-- 过渡页面 -->
+    <div class="section" id="home"></div>
+
+    <!-- 产品列表swiper -->
+    <div class="section" id="pro">
+        <div class="textTips">
+            <img src="/event/asset/img/tips.png" width="100%;" />
+        </div>
+
+        <a href="javascript:void(0);" class="buyBtn">
+            <img src="/event/asset/img/buy.png" width="100%;" />
+        </a>
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background:url(/event/asset/img/p1.png) center no-repeat; background-size: auto 100%;">
+                    <a href="javascript:void(0);" data-type="p1"></a>
+                    <a href="javascript:void(0);" data-type="p2"></a>
+                    <a href="javascript:void(0);" data-type="p3"></a>
+                </div>
+                <div class="swiper-slide" style="background:url(/event/asset/img/p2.png) center no-repeat; background-size: auto 100%;">
+                    <a href="javascript:void(0);" data-type="m1"></a>
+                    <a href="javascript:void(0);" data-type="m2"></a>
+                    <a href="javascript:void(0);" data-type="m3"></a>
+                </div>
+                <div class="swiper-slide" style="background:url(/event/asset/img/p3.png) center no-repeat; background-size: auto 100%;">
+                    <a href="javascript:void(0);" data-type="m4"></a>
+                    <a href="javascript:void(0);" data-type="m5"></a>
+                    <a href="javascript:void(0);" data-type="m6"></a>
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+    </div>
+
+
+
+
+    <!-- 售完 -->
+    <div class="qrcode" id="saleout">
+        <img src="" sourcesrc="/event/asset/img/qrcode_saleout.png" height="100%" />
+    </div>
+
+    <!-- ec -->
+    <div class="qrcode" id="ec">
+        <img src="" sourcesrc="/event/asset/img/qrcode_ec.png" height="100%" />
+    </div>
+
+    <!-- 预定 -->
+    <div class="qrcode" id="reservation">
+        <img src="" sourcesrc="/event/asset/img/qrcode_reservation.png" height="100%" />
+    </div>
+
+    <!-- list -->
+    <div class="section" id="list">
+        <dl>
+            <dt>
+                <div class='infovideMask'>
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <svg version="1.1" id="PLAY" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="67px" fill="#fff" height="67px" style="opacity: .7;" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                    <path d="M32,5c14.888,0,27,12.112,27,27S46.888,59,32,59S5,46.888,5,32S17.112,5,32,5 M32,2C15.433,2,2,15.432,2,32
+                        c0,16.568,13.433,30,30,30s30-13.432,30-30C62,15.432,48.567,2,32,2L32,2z"/>
+                    <path d="M43.987,28.745L28.013,18.232C25.256,16.418,23,17.635,23,20.935V43.06c0,3.3,2.259,4.521,5.021,2.714l15.959-10.444
+                        C46.741,33.521,46.744,30.559,43.987,28.745z M41.858,33.124l-14.185,9.283C26.753,43.01,26,42.603,26,41.503V22.491
+                        c0-1.1,0.752-1.505,1.671-0.9l14.19,9.338C42.78,31.533,42.779,32.521,41.858,33.124z"/>
+                    </svg>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper" id="proSwiper">
+                        
+                    </div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+            </dt>
+            <dd>
+                <div class="modelInfo">
+                    <a href="javascript:;" class="close">
+                        <img src="" sourcesrc="/event/asset/img/close.png" width="100%">
+                    </a>
+                    <a href="javascript:void(0);" class="btn reserveBtn">
+                        <img src="" sourcesrc="/event/asset/img/reserve_btn.png" width="100%">
+                    </a>
+                    <a href="javascript:void(0);" class="btn nowbuyBtn">
+                        <img src="" sourcesrc="/event/asset/img/nowbuy_btn.jpg" width="100%">
+                    </a>
+                </div>
+                <img src="/event/asset/img/m-s-1.jpg" id="pro-s" height="100%">
+            </dd>
+        </dl>
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<script type="text/javascript" src="asset/js/public.min.js"></script>
+<script type="text/javascript">
+    var allimg = [
+        "/event/asset/img/arr-l.png",
+        "/event/asset/img/arr-r.png",
+        "/event/asset/img/buy.png",
+        "/event/asset/img/close.png",
+        "/event/asset/img/home.jpg",
+        "/event/asset/img/info-poster.jpg",
+        "/event/asset/img/m-l-1.jpg",
+
+        "/event/asset/img/m-s-1.jpg",
+        "/event/asset/img/m-s-2.jpg",
+        "/event/asset/img/m-s-3.jpg",
+        "/event/asset/img/m-s-4.jpg",
+        "/event/asset/img/m-s-5.jpg",
+        "/event/asset/img/m-s-6.jpg",
+
+        "/event/asset/img/nowbuy_btn.jpg",
+
+        "/event/asset/img/p-s-1.jpg",
+        "/event/asset/img/p-s-2.jpg",
+        "/event/asset/img/p-s-3.jpg",
+
+        "/event/asset/img/p1.png",
+        "/event/asset/img/p2.png",
+        "/event/asset/img/p3.png",
+
+        "/event/asset/img/pbg.jpg",
+        "/event/asset/img/poster.jpg",
+        "/event/asset/img/qrcode_bg.png",
+        "/event/asset/img/qrcode_ec.png",
+        "/event/asset/img/qrcode_reservation.png",
+        "/event/asset/img/qrcode_saleout.png",
+
+        "/event/asset/img/reserve_btn.png",
+        "/event/asset/img/tips.png",
+        "/event/asset/img/share.jpg",
+
+        "/event/video/test.mp4",
+    ], vbl = 0;
+
+    document.body.addEventListener('touchmove', function(e) {
+        e.preventDefault()
+    });
+
+    var UA = window.navigator.userAgent;
+    var isAndroid = /(^| |\()(android)(;| |\/|$)/i.test(UA);
+    var isIOS = /(^| |\()(iPhone|iPad)(;| |\/|$)/i.test(UA);
+    var isIPad = /(^| |\()(iPad)(;| |\/|$)/i.test(UA);
+
+
+    function valentino(){
+        var self = this;
+        this.init = function(){   // 初始化执行函数
+            self.valentinoEvent();
+            self.homeMedia();
+            //self.homeMedia(".videoCon", "video/test.mp4", "asset/img/m-l-1.jpg");
+        };
+        this.creatMedia = function(_id, _url, _ap, _poster){    // 创建视频
+            var video = '<video width="100%" height="100%" id="'+_id+'" controls preload="auto" playsinline webkit-playsinline src="'+_url+'" poster="'+_poster+'"></video>'
+            // var video = document.createElement("video"),
+            //     w = window.innerWidth,
+            //     h = window.innerHeight;
+
+            //     // if(isAndroid){
+            //     //     video.setAttribute("controls", "");
+            //     // }else{
+            //     //     //video.setAttribute("controls", false);
+            //     // }
+
+            //     video.id = _id;
+            //     video.setAttribute("width", "100%");
+            //     video.setAttribute("height", "100%");
+            //     if(_ap){
+            //         video.setAttribute("autoplay", _ap);
+            //     }
+            //     video.setAttribute("preload", "auto");
+            //     video.setAttribute("playsinline", "");
+            //     video.setAttribute("webkit-playsinline", "true");
+            //     //video.setAttribute("controls", "controls");
+            //     video.setAttribute("poster", _poster);
+            //     video.setAttribute("src", _url);
+
+
+            return video;
+        }
+        this.eventTester = function(m, e, c){    // 视频事件监测函数
+            /*
+             * eventTester("play");              // play()和autoplay开始播放时触发
+             * eventTester("pause");             // pause() 暂停触发
+             * eventTester("timeupdate");        // 播放时间改变
+             * eventTester("ended");             // 播放结束
+             */
+            m.addEventListener(e,function(){
+                 c()
+            },false);
+        }
+        this.sectionChange = function(n){        // section 页面切换
+            $(".section").removeClass("show transition");
+            $("#" + n).addClass('show transition');
+        }
+    }
+
+    valentino.prototype.valentinoEvent = function(){
+        var self = this;
+
+        this.homeMedia = function(){
+
+            var hv = document.getElementById("homeVideo");
+            hv.autoplay = false;
+            
+            // $(".videoMask").on("click", function(){
+            //     vbl = 1;
+            //     hv.controls = true;
+            //     hv.play();
+            //     $(".videoMask").fadeOut("fast", function(){
+            //         $("#homeVideo").css({"height": "100%"});
+            //     });
+            // })
+
+            //if(isAndroid){
+                $(".videoMask").on("click", function(e){
+                    vbl = 1;
+                    hv.controls = false;
+                    hv.play();
+                    $(".videoMask").fadeOut("slow", function(){
+                        $("#homeVideo").css({"height": "100%"});
+                    });
+
+                    _hmt.push(['_trackEvent', 'media', '引导页视频 ｜ home-video']);
+                    e.preventDefault();
+
+                })
+            // }else{
+            //     vbl = 1;
+            //     hv.controls = false;
+            //     $(".videoMask").fadeOut();
+            //     $("#homeVideo").css({"height": "100%"});
+            // }
+
+
+            // var hv = self.creatMedia(u, false, p);
+            // $(n).html(hv);
+
+            self.eventTester(hv, "ended", function(){
+                self.sectionChange("home");
+                setTimeout(function(){
+                    self.sectionChange("pro");
+
+                    var swiper = new Swiper('#pro .swiper-container', {
+                        nextButton: '#pro .swiper-button-next',
+                        prevButton: '#pro .swiper-button-prev',
+                        spaceBetween: 30
+                    });
+                }, 2000);
+                //console.log("ended");
+            });
+
+        }
+
+    }
+
+    var rosso = new valentino();
+
+
+
+/**
+ * 切换客户端的webview横竖屏切换
+ * @param screen_type 目标横竖屏状态，1=竖屏 、2=横屏
+ * @param callback 回调函数，如果回调返回1代表竖屏，2代表横屏
+ */
+// function changeOrientation(screen_type, callback) {
+//     if (isIOS || isAndroid) {
+        
+//     }
+// };
+
+
+function changeOrientation(screen_type) {
+    if(!vbl) return false;
+    if($("#video").hasClass("show")){
+        var h_v = document.getElementById("homeVideo");
+        if(screen_type == "-90" || screen_type == "90"){       // 横屏
+            h_v.play();
+            $("#homeVideo").css({"height": "100%"});     
+        }else{                                                 // 竖屏
+            h_v.pause();
+            $("#homeVideo").css({"height": "0"});
+        }
+    }
+};
+
+
+function orientationChange() {
+    changeOrientation(window.orientation);
+};
+
+
+addEventListener('load', function(){
+    orientationChange();
+    window.onorientationchange = orientationChange;
+});
+
+
+
+/* 计数函数 */
+
+var counts = 0, reqa, tType;
+var block = document.querySelector('.p1');
+
+function counter(){
+    if(counts == 20){
+        csvideoFunStart(tType);
+        counts += 1;
+    }else if(counts > 20){
+
+    }else{
+        counts += 1;
+    }
+    //console.log(counts);
+    reqa = requestAnimationFrame(counter);
+}
+
+
+var csv = document.getElementById("commingSoonVideo");
+
+$("#pro .swiper-slide").delegate("a", "touchstart", function(e){
+        csv.play(); 
+        csv.pause();
+        counts = 0;
+        tType = $(this).attr("data-type");
+        reqa = requestAnimationFrame(counter);
+
+        _hmt.push(['_trackEvent', 'link', '点击产品 ｜' + tType ]);
+        e.preventDefault();
+})
+
+$("#pro .swiper-slide").delegate("a", "touchend", function(e){
+        if(counts >= 20){
+            csvideoFunEnd();
+        };
+        window.cancelAnimationFrame(reqa);
+        e.preventDefault();
+})
+
+function csvideoFunStart(t){
+    csv.play(); 
+    $("#commingsoon").css({"visibility": "visible"}).fadeIn(); 
+    $("#commingSoonVideo").css({"height": "100%"});
+    _hmt.push(['_trackEvent', 'media', '过渡视频 ｜ transition-video' ]);
+}
+
+function csvideoFunEnd(){
+    getInfo(tType);
+    rosso.sectionChange("list");
+    // window.location.href = "/list.html?key=" + tType;
+    $("#commingsoon").css({"visibility": "hidden"}).fadeOut(function(){
+        $("#commingSoonVideo").css({"height": "0"});
+        setTimeout(function(){
+            csv.pause();
+        }, 200) 
+    });
+    
+    // console.log("OK");
+}
+
+
+
+
+
+
+
+/* list.html */
+
+var listData = {
+    "p1": {
+        "type": "pro",
+        "pro": "/event/asset/img/p-s-1.jpg",
+        "list": ["/event/asset/img/m-l-1.jpg"],
+        "status": 2
+    },
+    "p2": {
+        "type": "video",
+        "pro": "/event/asset/img/p-s-2.jpg",
+        "list": ["/event/video/test.mp4"],
+        "status": 1
+    },
+    "p3": {
+        "type": "pro",
+        "pro": "/event/asset/img/p-s-3.jpg",
+        "list": ["/event/asset/img/m-l-1.jpg"],
+        "status": 2
+    },
+    "m1": {
+        "type": "model",
+        "pro": "/event/asset/img/m-s-1.jpg",
+        "list": ["/event/asset/img/m-l-1.jpg", "/event/asset/img/m-l-1.jpg", "/event/asset/img/m-l-1.jpg"],
+        "status": 2
+    },
+    "m2": {
+        "type": "model",
+        "pro": "/event/asset/img/m-s-2.jpg",
+        "list": ["/event/asset/img/m-l-1.jpg", "/event/asset/img/m-l-1.jpg", "/event/asset/img/m-l-1.jpg"],
+        "status": 2
+    },
+    "m3": {
+        "type": "model",
+        "pro": "/event/asset/img/m-s-3.jpg",
+        "list": ["/event/asset/img/m-l-1.jpg", "/event/asset/img/m-l-1.jpg", "/event/asset/img/m-l-1.jpg"],
+        "status": 2
+    },
+    "m4": {
+        "type": "model",
+        "pro": "/event/asset/img/m-s-4.jpg",
+        "list": ["/event/asset/img/m-l-1.jpg", "/event/asset/img/m-l-1.jpg", "/event/asset/img/m-l-1.jpg"],
+        "status": 2
+    },
+    "m5": {
+        "type": "model",
+        "pro": "/event/asset/img/m-s-5.jpg",
+        "list": ["/event/asset/img/m-l-1.jpg", "/event/asset/img/m-l-1.jpg", "/event/asset/img/m-l-1.jpg"],
+        "status": 2
+    },
+    "m6": {
+        "type": "model",
+        "pro": "/event/asset/img/m-s-6.jpg",
+        "list": ["/event/asset/img/m-l-1.jpg", "/event/asset/img/m-l-1.jpg", "/event/asset/img/m-l-1.jpg"],
+        "status": 2
+    }
+}
+
+
+
+var swiperHTML, prosUrl, proStatus, infoSwiper;
+
+infoSwiper = new Swiper('#list .swiper-container', {
+    nextButton: '#list .swiper-button-next',
+    prevButton: '#list .swiper-button-prev',
+    observer:true,
+}); 
+
+// console.log(key);
+function getInfo(key){
+
+    $.map(listData, function(a, b){
+        if(b == key){
+            if(a.type == "video"){ // a.type == "pro" || a.type == "video"
+                $(".modelInfo").addClass("proInfo");
+                $(".modelInfo .btn").hide();
+                $(".nowbuyBtn").show();
+            }else if(a.type == "pro"){
+                $(".modelInfo").addClass("proInfo");
+                $(".modelInfo .btn").hide();
+                $(".reserveBtn").show();
+            }else{
+                $(".modelInfo").removeClass("proInfo");
+                $(".modelInfo .btn").hide();
+                $(".reserveBtn").show();
+            }
+
+            prosUrl = a.pro;
+            proStatus = a.status;
+            
+
+            if(a.type == "video"){
+                swiperHTML = rosso.creatMedia("infoVideo", a.list[0], false, "/event/asset/img/info-poster.jpg");  // _id, _url, _ap, _poster
+                $(".infovideMask").addClass("show");
+            }else{
+                swiperHTML = $.map(a.list, function(c, d){
+                    return '<div class="swiper-slide">' +
+                               '<img src="'+ c +'" />' +
+                           '</div>'
+                }).join("");
+                $(".infovideMask").removeClass("show");
+            }
+            
+        }
+    })
+
+    $("#pro-s").attr({"src": prosUrl, "data-status": proStatus});
+
+
+
+    $("#proSwiper").html(swiperHTML);
+
+    infoSwiper.update(true);
+    infoSwiper.slideTo(0, 100, false);
+
+    // info视频点击播放事件
+    
+    $("#list").delegate(".infovideMask", "click", function(e){
+        var iv = document.getElementById("infoVideo");
+        if($(".infovideMask").hasClass("show")){
+            $(".infovideMask").removeClass("show");
+        }
+        
+        iv.play();
+        rosso.eventTester(iv, "ended", function(){
+            if(!$(".infovideMask").hasClass("show")){
+                $(".infovideMask").addClass("show");
+            }
+        });
+        rosso.eventTester(iv, "pause", function(){
+            if(!$(".infovideMask").hasClass("show")){
+                $(".infovideMask").addClass("show");
+            }
+        });
+        _hmt.push(['_trackEvent', 'media', '产品详细页面视频 ｜ info-video' ]);
+        e.preventDefault();
+    })
+    //$("#proSwiper").removeAttr("style");
+     
+}
+
+
+$(".btn").on("click", function(e){
+    var proStatusVal = $("#pro-s").attr("data-status");
+    if(proStatusVal == 0){
+        $("#saleout").addClass('show transition');
+    }else if(proStatusVal == 1){
+        $("#ec").addClass('show transition');
+    }else{
+        $("#reservation").addClass('show transition');
+    }
+
+    _hmt.push(['_trackEvent', 'btn', '二维码弹层状态 ｜ ' + proStatusVal ]);
+    e.preventDefault()
+})
+
+$(".buyBtn").on("click", function(){
+    getInfo("p2");
+    rosso.sectionChange("list");
+    _hmt.push(['_trackEvent', 'btn', '立即抢购按钮 ｜ nowbuy' ]);
+    //$("#ec").addClass('show transition');
+})
+
+$(".qrcode").on("click", function(e){
+    $(".qrcode").removeClass("show transition");  
+    e.preventDefault()
+})
+
+
+$(".qrcode img").on("touchstart", function(e){
+    e.preventDefault()
+})
+
+
+
+
+
+// loading 执行
+pfun.loadingFnDoing(allimg, function(){
+    rosso.sectionChange("video");
+    rosso.init();
+    $(".loading").css({"visibility": "hidden"});
+    pfun.init();
+})
+
+
+
+
+$(".close").on("click", function(e){
+    var iv = document.getElementById("infoVideo");
+        
+        if(iv){
+           iv.pause(); 
+           $(".infovideMask").removeClass("show");
+        }
+
+        rosso.sectionChange('pro');
+
+        _hmt.push(['_trackEvent', 'link', '关闭link ｜ close' ]);
+        e.preventDefault();
+})
+
+
+// alert("W :" + $(window).width());
+// alert("H :" + $(window).height());
+
+</script>
+
+
+
+<!-- 362 736
+
+375 603
+
+667 323 -->
+
+
+
+<!-- 横屏代码 -->
+<div id="orientLayer" class="mod-orient-layer">
+    <div class="mod-orient-layer__content">
+        <i class="icon mod-orient-layer__icon-orient"></i>
+        <div class="mod-orient-layer__desc">为了更好的体验，请使用横屏浏览</div>
+    </div>
+</div>
+
 </body>
 </html>
