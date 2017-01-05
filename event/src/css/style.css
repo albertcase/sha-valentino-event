@@ -238,19 +238,22 @@ img { pointer-events: none; }*/
     background-size: 100% auto;
 }
 
-.btn.nowbuyBtn, .btn.reserveBtn.btnpos{
+.btn.btnpos{
     bottom: 14%;
+}
+
+.modelInfo .btn{
     display: none;
 }
 
 .proInfo .btn{
-    display: none;
+    bottom: 14%;
 }
 
 
-.proInfo .btn.nowbuyBtn, .btn.reserveBtn.btnpos{
+/*.modelInfo.proInfo .btn.nowbuyBtn{
     display: block;
-}
+}*/
 
 
 

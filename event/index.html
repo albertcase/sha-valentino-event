@@ -556,11 +556,16 @@ function getInfo(key){
         if(b == key){
             if(a.type == "video"){ // a.type == "pro" || a.type == "video"
                 $(".modelInfo").addClass("proInfo");
+                $(".modelInfo .btn").hide();
+                $(".nowbuyBtn").show();
             }else if(a.type == "pro"){
-                $(".reserveBtn").addClass("btnpos");
+                $(".modelInfo").addClass("proInfo");
+                $(".modelInfo .btn").hide();
+                $(".reserveBtn").show();
             }else{
-                $(".reserveBtn").removeClass("btnpos");
                 $(".modelInfo").removeClass("proInfo");
+                $(".modelInfo .btn").hide();
+                $(".reserveBtn").show();
             }
 
             prosUrl = a.pro;
