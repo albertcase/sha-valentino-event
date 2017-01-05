@@ -431,6 +431,8 @@ function counter(){
 }
 
 
+var csv = document.getElementById("commingSoonVideo");
+
 $("#pro .swiper-slide").delegate("a", "touchstart", function(e){
         csv.play(); 
         csv.pause();
@@ -450,9 +452,6 @@ $("#pro .swiper-slide").delegate("a", "touchend", function(e){
         e.preventDefault();
 })
 
-
-
-var csv = document.getElementById("commingSoonVideo");
 function csvideoFunStart(t){
     csv.play(); 
     $("#commingsoon").css({"visibility": "visible"}).fadeIn(); 
