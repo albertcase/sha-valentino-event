@@ -247,11 +247,8 @@ img { pointer-events: none; }*/
     display: none;
 }
 
-.proInfo-2 .btn{
-    display: none;
-}
 
-.proInfo .btn.nowbuyBtn,.proInfo-2 .btn.reserveBtn{
+.proInfo .btn.nowbuyBtn,.btn.reserveBtn.btnpos{
     display: block;
 }
 
