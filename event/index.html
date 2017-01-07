@@ -101,7 +101,7 @@
     </div>
 
     <!-- 过渡页面 -->
-    <div class="section" id="home"></div>
+    <div id="home"></div>
 
     <!-- 产品列表swiper -->
     <div class="section" id="pro">
@@ -159,7 +159,7 @@
     <!-- list -->
     <div class="section" id="list">
         <a href="javascript:;" class="close">
-            <img src="" sourcesrc="/event/asset/img/close.png" width="100%">
+            <img src="" sourcesrc="/event/asset/img/close.png?v=01" width="100%">
         </a>
         <dl>
             <dt>
@@ -354,15 +354,19 @@
             // $(n).html(hv);
 
             self.eventTester(hv, "ended", function(){
-                self.sectionChange("home");
+                //self.sectionChange("home");
+                $("#home").fadeIn();
                 setTimeout(function(){
-                    self.sectionChange("pro");
+                    $("#home").fadeOut("300", function(){
+                        self.sectionChange("pro");
 
-                    var swiper = new Swiper('#pro .swiper-container', {
-                        nextButton: '#pro .swiper-button-next',
-                        prevButton: '#pro .swiper-button-prev',
-                        spaceBetween: 30
+                        var swiper = new Swiper('#pro .swiper-container', {
+                            nextButton: '#pro .swiper-button-next',
+                            prevButton: '#pro .swiper-button-prev',
+                            spaceBetween: 30
+                        });
                     });
+                    
                 }, 2000);
                 //console.log("ended");
             });
