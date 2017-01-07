@@ -583,7 +583,8 @@ var swiperHTML, prosUrl, proStatus, infoSwiper;
 infoSwiper = new Swiper('#list .swiper-container', {
     nextButton: '#list .swiper-button-next',
     prevButton: '#list .swiper-button-prev',
-    observer:true,
+    observer: true,
+    loop: true
 }); 
 
 // console.log(key);
@@ -591,7 +592,7 @@ function getInfo(key){
 
     $.map(listData, function(a, b){
         if(b == key){
-            if(a.type == "video"){ // a.type == "pro" || a.type == "video"
+            if(a.type == "video" || b == "p2"){ // a.type == "pro" || a.type == "video"
                 $(".modelInfo").addClass("proInfo");
                 $(".modelInfo .btn").hide();
                 $(".nowbuyBtn").show();
