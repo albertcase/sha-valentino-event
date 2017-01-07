@@ -334,11 +334,9 @@
                     vbl = 1;
                     hv.controls = false;
                     hv.play();
-                    $(".videoMask").fadeOut("slow", function(){
-                        setTimeout(function(){
-                            $("#homeVideo").css({"height": "100%"});
-                        }, 600)
-                    });
+                    $("#homeVideo").css({"height": "100%"});
+
+                    $(".videoMask").fadeOut("slow");
 
                     _hmt.push(['_trackEvent', 'media', '引导页视频 ｜ home-video']);
                     e.preventDefault();
