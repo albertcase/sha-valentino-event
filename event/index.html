@@ -104,29 +104,29 @@
     <div id="home"></div>
 
     <!-- 产品列表swiper -->
-    <div class="section" id="pro">
+    <div class="section" id="pro" style="left: 100%">
         <div class="textTips">
             <img src="/event/asset/img/tips.png" width="100%;" />
         </div>
 
         <a href="javascript:void(0);" class="buyBtn">
-            <img src="/event/asset/img/buy.png" width="100%;" />
+            <img src="/event/asset/img/buy.jpg" width="100%;" />
         </a>
 
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background:url(/event/asset/img/p1.png) center no-repeat; background-size: auto 100%;">
+                <div class="swiper-slide" style="background:url(/event/asset/img/p1.jpg) center no-repeat; background-size: auto 100%;">
                     <a href="javascript:void(0);" data-type="p1"></a>
                     <a href="javascript:void(0);" data-type="p2"></a>
                     <a href="javascript:void(0);" data-type="p3"></a>
                 </div>
-                <div class="swiper-slide" style="background:url(/event/asset/img/p2.png) center no-repeat; background-size: auto 100%;">
+                <div class="swiper-slide" style="background:url(/event/asset/img/p2.jpg) center no-repeat; background-size: auto 100%;">
                     <a href="javascript:void(0);" data-type="m1"></a>
                     <a href="javascript:void(0);" data-type="m2"></a>
                     <a href="javascript:void(0);" data-type="m3"></a>
                 </div>
-                <div class="swiper-slide" style="background:url(/event/asset/img/p3.png) center no-repeat; background-size: auto 100%;">
+                <div class="swiper-slide" style="background:url(/event/asset/img/p3.jpg) center no-repeat; background-size: auto 100%;">
                     <a href="javascript:void(0);" data-type="m4"></a>
                     <a href="javascript:void(0);" data-type="m5"></a>
                     <a href="javascript:void(0);" data-type="m6"></a>
@@ -211,7 +211,7 @@
     var allimg = [
         "/event/asset/img/arr-l.png",
         "/event/asset/img/arr-r.png",
-        "/event/asset/img/buy.png",
+        "/event/asset/img/buy.jpg",
         "/event/asset/img/close.png",
         "/event/asset/img/home.jpg",
         "/event/asset/img/info-poster.jpg",
@@ -230,11 +230,12 @@
         "/event/asset/img/p-s-2.jpg",
         "/event/asset/img/p-s-3.jpg",
 
-        "/event/asset/img/p1.png",
-        "/event/asset/img/p2.png",
-        "/event/asset/img/p3.png",
+        "/event/asset/img/p1.jpg",
+        "/event/asset/img/p2.jpg",
+        "/event/asset/img/p3.jpg",
 
         "/event/asset/img/pbg.jpg",
+        "/event/asset/img/pbg-2.jpg",
         "/event/asset/img/poster.jpg",
         "/event/asset/img/qrcode_bg.png",
         "/event/asset/img/qrcode_ec.png",
@@ -248,6 +249,11 @@
 
         "/event/video/01_final.mp4",
         "/event/video/home.mp4",
+
+        "/event/asset/img/p-l2-1.jpg",
+        "/event/asset/img/p-l2-2.jpg",
+        "/event/asset/img/p-l2-3.jpg",
+
     ], vbl = 0;
 
     document.body.addEventListener('touchmove', function(e) {
@@ -357,14 +363,14 @@
                 //self.sectionChange("home");
                 $("#home").fadeIn("100");
                 setTimeout(function(){
-                    $("#home").fadeOut("100", function(){
-                        self.sectionChange("pro");
+                    $("#home").stop().animate({"left": "-100%"});
+                    self.sectionChange("pro");
+                    $("#pro").stop().animate({"left": "0"});
 
-                        var swiper = new Swiper('#pro .swiper-container', {
-                            nextButton: '#pro .swiper-button-next',
-                            prevButton: '#pro .swiper-button-prev',
-                            spaceBetween: 30
-                        });
+                    var swiper = new Swiper('#pro .swiper-container', {
+                        nextButton: '#pro .swiper-button-next',
+                        prevButton: '#pro .swiper-button-prev',
+                        spaceBetween: 30
                     });
                     
                 }, 2000);
@@ -482,7 +488,13 @@ function csvideoFunEnd(){
 
 
 
-
+// ,
+//     "p2": {
+//         "type": "video",
+//         "pro": "/event/asset/img/p-s-2.jpg",
+//         "list": ["/event/video/test.mp4"],
+//         "status": 1
+//     }
 
 
 /* list.html */
@@ -495,9 +507,9 @@ var listData = {
         "status": 2
     },
     "p2": {
-        "type": "video",
+        "type": "pro",
         "pro": "/event/asset/img/p-s-2.jpg",
-        "list": ["/event/video/test.mp4"],
+        "list": ["/event/asset/img/p-l2-1.jpg", "/event/asset/img/p-l2-2.jpg", "/event/asset/img/p-l2-3.jpg"],
         "status": 1
     },
     "p3": {

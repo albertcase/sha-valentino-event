@@ -216,7 +216,7 @@ img { pointer-events: none; }*/
 .close{
     width: 6%;
     position: absolute;
-    left: 3%;
+    right: 3%;
     top: 3%;  
     z-index: 10;
 }
