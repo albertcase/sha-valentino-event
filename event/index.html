@@ -355,9 +355,9 @@
 
             self.eventTester(hv, "ended", function(){
                 //self.sectionChange("home");
-                $("#home").fadeIn();
+                $("#home").fadeIn("100");
                 setTimeout(function(){
-                    $("#home").fadeOut("300", function(){
+                    $("#home").fadeOut("100", function(){
                         self.sectionChange("pro");
 
                         var swiper = new Swiper('#pro .swiper-container', {
