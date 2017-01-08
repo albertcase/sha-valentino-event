@@ -190,12 +190,12 @@ img { pointer-events: none; }*/
 }
 
 #list dl dd { 
-    width: 25%;
+    width: 27%;
     float: left;
 }
 
 #list dl dt { 
-    width: 75%;
+    width: 73%;
     float: left;
     overflow: hidden;
 }
@@ -367,11 +367,25 @@ img { pointer-events: none; }*/
     #list dl dt img{
         height: 101%;
     }
+
+    #list dl dd { 
+        width: 25%;
+    }
+
+    #list dl dt { 
+        width: 75%;
+    }
 }
 
 /* 6 */
 @media only screen and (min-device-width: 375px) and (max-device-width: 410px) and (orientation: portrait) {
+    #list dl dd { 
+        width: 25%;
+    }
 
+    #list dl dt { 
+        width: 75%;
+    }
 }
 
 /* 5s */
