@@ -120,7 +120,7 @@ var pfun = {
                 link: shareArr._link,
                 imgUrl: shareArr._imgUrl,
                 success: function (res) {
-                    // _hmt.push(['_trackEvent', 'share', 'ShareAppMessage']);
+                    _hmt.push(['_trackEvent', 'eventShare', 'eventShareAppMessage']);
                     //  alert('已分享');
                 },
                 cancel: function (res) {
@@ -140,7 +140,7 @@ var pfun = {
                 imgUrl: shareArr._imgUrl,
 
                 success: function (res) {
-                    // _hmt.push(['_trackEvent', 'share', 'ShareTimeline']);
+                    _hmt.push(['_trackEvent', 'eventShare', 'eventShareTimeline']);
                     // alert('已分享');
                 },
                 cancel: function (res) {
