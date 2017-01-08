@@ -382,13 +382,7 @@ img { pointer-events: none; }*/
 /* 4s */
 
 @media handheld and (min-height:400px),screen and (max-height:420px) {
-    #list dl dd { 
-        width: 27%;
-    }
 
-    #list dl dt { 
-        width: 73%;
-    }
 }
 
 
