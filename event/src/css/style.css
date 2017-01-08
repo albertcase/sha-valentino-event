@@ -190,12 +190,12 @@ img { pointer-events: none; }*/
 }
 
 #list dl dd { 
-    width: 27%;
+    width: 25%;
     float: left;
 }
 
 #list dl dt { 
-    width: 73%;
+    width: 75%;
     float: left;
     overflow: hidden;
 }
@@ -367,25 +367,11 @@ img { pointer-events: none; }*/
     #list dl dt img{
         height: 101%;
     }
-
-    #list dl dd { 
-        width: 25%;
-    }
-
-    #list dl dt { 
-        width: 75%;
-    }
 }
 
 /* 6 */
 @media only screen and (min-device-width: 375px) and (max-device-width: 410px) and (orientation: portrait) {
-    #list dl dd { 
-        width: 25%;
-    }
 
-    #list dl dt { 
-        width: 75%;
-    }
 }
 
 /* 5s */
@@ -396,7 +382,13 @@ img { pointer-events: none; }*/
 /* 4s */
 
 @media handheld and (min-height:400px),screen and (max-height:420px) {
+    #list dl dd { 
+        width: 27%;
+    }
 
+    #list dl dt { 
+        width: 73%;
+    }
 }
 
 
