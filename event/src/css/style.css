@@ -190,12 +190,12 @@ img { pointer-events: none; }*/
 }
 
 #list dl dd { 
-    width: 27%;
+    width: 25%;
     float: left;
 }
 
 #list dl dt { 
-    width: 73%;
+    width: 75%;
     float: left;
     overflow: hidden;
 }
@@ -214,7 +214,7 @@ img { pointer-events: none; }*/
 }
 
 .close{
-    width: 6%;
+    width: 7%;
     position: absolute;
     right: 3%;
     top: 3%;  
@@ -363,6 +363,10 @@ img { pointer-events: none; }*/
         width: 112%;
         left: -6%;
     }*/
+
+    #list dl dt img{
+        height: 101%;
+    }
 }
 
 /* 6 */

@@ -17,7 +17,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="Keywords" content="">
 	<meta name="Description" content="...">
-    <link rel="stylesheet" type="text/css" href="/event/asset/css/all.min.css?v=07">
+    <link rel="stylesheet" type="text/css" href="/event/asset/css/all.min.css?v=09">
     <script type="text/javascript" src="/event/asset/js/all.min.js"></script>
     <script type="text/javascript" src="http://valentinowechat.samesamechina.com/api/v1/js/60c4349e-c302-4313-9fa8-37a8ebd59853/wechat"></script>
     <style type="text/css">
@@ -264,7 +264,7 @@
         "/event/asset/img/m-l2-2.jpg",
         "/event/asset/img/m-l3-1.jpg",
         "/event/asset/img/m-l3-2.jpg",
-        "/event/asset/img/m-l3-3.jpg",
+        // "/event/asset/img/m-l3-3.jpg",
         "/event/asset/img/m-l4-1.jpg",
         "/event/asset/img/m-l4-2.jpg",
         "/event/asset/img/m-l5-1.jpg",
@@ -485,7 +485,7 @@ $("#pro .swiper-slide").delegate("a", "touchend", function(e){
 })
 
 function csvideoFunStart(t){
-    csv.currentTime = 1;
+    csv.currentTime = 0;
     csv.play(); 
     $("#commingsoon").css({"visibility": "visible"}).fadeIn(); 
     $("#commingSoonVideo").css({"height": "100%"});
@@ -530,7 +530,7 @@ var listData = {
     "p2": {
         "type": "pro",
         "pro": "/event/asset/img/p-s-2.jpg",
-        "list": ["/event/asset/img/p-l2-1.jpg", "/event/asset/img/p-l2-2.jpg", "/event/asset/img/p-l2-3.jpg"],
+        "list": ["/event/asset/img/p-l2-2.jpg", "/event/asset/img/p-l2-3.jpg"],
         "status": 1
     },
     "p3": {
@@ -554,7 +554,7 @@ var listData = {
     "m3": {
         "type": "model",
         "pro": "/event/asset/img/m-s-3.jpg",
-        "list": ["/event/asset/img/m-l3-1.jpg", "/event/asset/img/m-l3-2.jpg", "/event/asset/img/m-l3-3.jpg"],
+        "list": ["/event/asset/img/m-l3-1.jpg", "/event/asset/img/m-l3-2.jpg"],
         "status": 2
     },
     "m4": {
@@ -565,7 +565,7 @@ var listData = {
     },
     "m5": {
         "type": "model",
-        "pro": "/event/asset/img/m-s-5.jpg",
+        "pro": "/event/asset/img/m-s-5.jpg?v=1",
         "list": ["/event/asset/img/m-l5-1.jpg", "/event/asset/img/m-l5-2.jpg", "/event/asset/img/m-l5-3.jpg"],
         "status": 2
     },
@@ -584,8 +584,7 @@ var swiperHTML, prosUrl, proStatus, infoSwiper;
 infoSwiper = new Swiper('#list .swiper-container', {
     nextButton: '#list .swiper-button-next',
     prevButton: '#list .swiper-button-prev',
-    observer: true,
-    loop: true
+    observer: true
 }); 
 
 // console.log(key);
@@ -632,7 +631,10 @@ function getInfo(key){
 
     $("#proSwiper").html(swiperHTML);
 
+
     infoSwiper.update(true);
+
+
     infoSwiper.slideTo(0, 100, false);
 
     // info视频点击播放事件

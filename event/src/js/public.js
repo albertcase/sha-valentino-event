@@ -30,9 +30,9 @@
 
 
 var shareArr = {
-    "_title": '探索ROSSO VALENTINO系列', //分享标题
-    "_desc": "探索ROSSO VALENTINO系列",    // 分享朋友圈的描述
-    "_desc_friend": "纯粹优雅，柔美璀璨。独特之作，为您呈现。",    // 分享好友的描述
+    "_title": '与刘嘉玲、娜扎一起领略ROSSO VALENTINO梦幻之作', //分享标题
+    "_desc": "与刘嘉玲、娜扎一起领略ROSSO VALENTINO梦幻之作",    // 分享朋友圈的描述
+    "_desc_friend": "红色SPIKE铆钉链条包，Valentino官方微信独家限量发售。",    // 分享好友的描述
     "_link": window.location.host + "/event",    //分享的连接
     "_imgUrl": "http://" + window.location.host + "/event/asset/img/share.jpg",   //分享的图片
     "_url": encodeURIComponent(window.location)//encodeURIComponent(window.location.href.split("#")[0]) //.replace('http%3A%2F%2F','')
