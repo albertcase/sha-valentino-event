@@ -477,14 +477,16 @@ $("#pro .swiper-slide").delegate("a", "touchstart", function(e){
 
         _hmt.push(['_trackEvent', 'link', '点击产品 ｜' + tType ]);
         e.preventDefault();
+        return false;
 })
 
 $("#pro .swiper-slide").delegate("a", "touchend", function(e){
-        if(counts >= 20){
+        if(counts >= 15){
             csvideoFunEnd();
         };
         window.cancelAnimationFrame(reqa);
         e.preventDefault();
+        return false;
 })
 
 function csvideoFunStart(t){
@@ -694,7 +696,7 @@ $(".qrcode").on("click", function(e){
 })
 
 
-$(".qrcode img").on("touchstart", function(e){
+$(".qrcode img").on("click", function(e){
     e.preventDefault()
 })
 
