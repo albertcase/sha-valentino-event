@@ -406,10 +406,12 @@
 
             // var hv = self.creatMedia(u, false, p);
             // $(n).html(hv);
-
-            self.eventTester(hv, "pause", function(){
-                $(".videoMask").show();
-            })
+            if(!browser.versions.iPhone){
+                self.eventTester(hv, "pause", function(){
+                    $(".videoMask").show();
+                })
+            }
+            
 
             self.eventTester(hv, "ended", function(){
                 //self.sectionChange("home");
@@ -704,20 +706,20 @@ $(".btn").on("click", function(e){
     if(proStatusVal == 0){
         $("#saleout").addClass('show transition');
     }else if(proStatusVal == 1){
-        $("#ec").addClass('show transition');
-        // if(isWeiXin()){
-        //     window.location.href = "http://rossovalentino.samesamechina.com/ec/";
-        // }else{
-        //     alert(6);
-        // }
+        //$("#ec").addClass('show transition');
+        if(isWeiXin()){
+            window.location.href = "http://rossovalentino.samesamechina.com/ec/";
+        }else{
+            alert(6);
+        }
         
     }else{
-        // if(isWeiXin()){
-        //     window.location.href = "http://rossovalentino.samesamechina.com/reservation";
-        // }else{
-        //     alert(9);
-        // }
-        $("#reservation").addClass('show transition');
+        if(isWeiXin()){
+            window.location.href = "http://rossovalentino.samesamechina.com/reservation";
+        }else{
+            alert(9);
+        }
+        //$("#reservation").addClass('show transition');
     }
 
     _hmt.push(['_trackEvent', 'btn', '二维码弹层状态 ｜ ' + proStatusVal ]);
