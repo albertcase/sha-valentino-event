@@ -32,6 +32,15 @@
     </style>
 
     <script type="text/javascript">
+        function isWeiXin(){
+            var ua = window.navigator.userAgent.toLowerCase();
+            if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
         var browser={  
             versions:function(){   
                    var u = navigator.userAgent, app = navigator.appVersion;   
@@ -53,7 +62,6 @@
           
         if(browser.versions.mobile || browser.versions.ios || browser.versions.android ||   
             browser.versions.iPhone || browser.versions.iPad){        
-                   
         }else{
             location.href = "pc.html"
         }
@@ -105,10 +113,7 @@
 
     <!-- 产品列表swiper -->
     <div class="section" id="pro" style="left: 100%">
-        <div class="textTips">
-            <img src="/event/asset/img/tips.png" width="100%;" />
-        </div>
-
+        
         <a href="javascript:void(0);" class="buyBtn">
             <img src="/event/asset/img/buy.jpg" ontouchstart="this.src='/event/asset/img/buy_active.jpg'" ontouchend="this.src='/event/asset/img/buy.jpg'" width="100%;" />
         </a>
@@ -120,16 +125,34 @@
                     <a href="javascript:void(0);" data-type="p1"></a>
                     <a href="javascript:void(0);" data-type="p2"></a>
                     <a href="javascript:void(0);" data-type="p3"></a>
+
+                    <div class="textTips">
+                        <img src="/event/asset/img/tips.png" width="100%;" />
+                    </div>
                 </div>
                 <div class="swiper-slide" style="background:url(/event/asset/img/p2.jpg) center no-repeat; background-size: auto 100%;">
                     <a href="javascript:void(0);" data-type="m1"></a>
                     <a href="javascript:void(0);" data-type="m2"></a>
                     <a href="javascript:void(0);" data-type="m3"></a>
+
+                    <div class="textTips">
+                        <img src="/event/asset/img/tips.png" width="100%;" />
+                    </div>
                 </div>
                 <div class="swiper-slide" style="background:url(/event/asset/img/p3.jpg) center no-repeat; background-size: auto 100%;">
                     <a href="javascript:void(0);" data-type="m4"></a>
                     <a href="javascript:void(0);" data-type="m5"></a>
                     <a href="javascript:void(0);" data-type="m6"></a>
+
+                    <div class="textTips">
+                        <img src="/event/asset/img/tips.png" width="100%;" />
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background:url(/event/asset/img/p4.jpg) center no-repeat; background-size: auto 100%;">
+                    <img src="/event/asset/img/p4.jpg" height="100%" style="opacity: 0;">
+                    <div class="textTips">
+                        <img src="/event/asset/img/tips-2.png" width="100%;" />
+                    </div>
                 </div>
             </div>
             <!-- Add Arrows -->
@@ -235,6 +258,7 @@
         "/event/asset/img/p1.jpg",
         "/event/asset/img/p2.jpg",
         "/event/asset/img/p3.jpg",
+        "/event/asset/img/p4.jpg",
 
         "/event/asset/img/pbg.jpg",
         "/event/asset/img/poster.jpg",
@@ -246,6 +270,7 @@
         "/event/asset/img/reserve_btn.png",
         "/event/asset/img/reserve_btn_active.jpg",
         "/event/asset/img/tips.png",
+        "/event/asset/img/tips-2.png",
         "/event/asset/img/share.jpg",
         "/event/asset/img/rosso-beginning.jpg",
 
@@ -384,6 +409,7 @@
 
             self.eventTester(hv, "ended", function(){
                 //self.sectionChange("home");
+                //$("#homeVideo").remove();
                 $("#home").fadeIn("100");
                 setTimeout(function(){
                     $("#home").stop().animate({"left": "-100%"});
@@ -674,9 +700,11 @@ $(".btn").on("click", function(e){
     if(proStatusVal == 0){
         $("#saleout").addClass('show transition');
     }else if(proStatusVal == 1){
-        $("#ec").addClass('show transition');
+        //$("#ec").addClass('show transition');
+        window.location.href = "http://rossovalentino.samesamechina.com/ec/";
     }else{
-        $("#reservation").addClass('show transition');
+        window.location.href = "http://rossovalentino.samesamechina.com/reservation";
+        //$("#reservation").addClass('show transition');
     }
 
     _hmt.push(['_trackEvent', 'btn', '二维码弹层状态 ｜ ' + proStatusVal ]);
