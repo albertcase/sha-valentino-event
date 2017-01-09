@@ -61,7 +61,10 @@
         }   
           
         if(browser.versions.mobile || browser.versions.ios || browser.versions.android ||   
-            browser.versions.iPhone || browser.versions.iPad){        
+            browser.versions.iPhone || browser.versions.iPad){    
+            if(!isWeiXin()){
+                location.href = "weibo.html"
+            }    
         }else{
             location.href = "pc.html"
         }
@@ -792,7 +795,7 @@ $(".close").on("click", function(e){
 <div id="orientLayer" class="mod-orient-layer">
     <div class="mod-orient-layer__content">
         <i class="icon mod-orient-layer__icon-orient"></i>
-        <div class="mod-orient-layer__desc">为了更好的体验，请使用横屏浏览</div>
+        <div class="mod-orient-layer__desc">请在解锁模式下使用横屏浏览</div>
     </div>
 </div>
 
