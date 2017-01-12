@@ -480,56 +480,56 @@ function csvideoFunEnd(){
 var listData = {
     "p1": {
         "type": "pro",
-        "pro": "/event/asset/img/p-s-1.jpg",
-        "list": ["/event/asset/img/p-l1-1.jpg", "/event/asset/img/p-l1-2.jpg"],
+        "pro": "/ppc/asset/img/p-s-1.jpg",
+        "list": ["/ppc/asset/img/p-l1-1.jpg", "/ppc/asset/img/p-l1-2.jpg"],
         "status": 2
     },
     "p2": {
         "type": "pro",
-        "pro": "/event/asset/img/p-s-2.jpg",
-        "list": ["/event/asset/img/p-l2-1.jpg", "/event/asset/img/p-l2-2.jpg", "/event/asset/img/p-l2-3.jpg"],
+        "pro": "/ppc/asset/img/p-s-2.jpg",
+        "list": ["/ppc/asset/img/p-l2-1.jpg", "/ppc/asset/img/p-l2-2.jpg", "/ppc/asset/img/p-l2-3.jpg"],
         "status": 0
     },
     "p3": {
         "type": "pro",
-        "pro": "/event/asset/img/p-s-3.jpg",
-        "list": ["/event/asset/img/p-l3-1.jpg", "/event/asset/img/p-l3-2.jpg"],
+        "pro": "/ppc/asset/img/p-s-3.jpg",
+        "list": ["/ppc/asset/img/p-l3-1.jpg", "/ppc/asset/img/p-l3-2.jpg"],
         "status": 2
     },
     "m1": {
         "type": "model",
-        "pro": "/event/asset/img/m-s-1.jpg",
-        "list": ["/event/asset/img/m-l1-1.jpg", "/event/asset/img/m-l1-2.jpg", "/event/asset/img/m-l1-3.jpg"],
+        "pro": "/ppc/asset/img/m-s-1.jpg",
+        "list": ["/ppc/asset/img/m-l1-1.jpg", "/ppc/asset/img/m-l1-2.jpg", "/ppc/asset/img/m-l1-3.jpg"],
         "status": 2
     },
     "m2": {
         "type": "model",
-        "pro": "/event/asset/img/m-s-2.jpg",
-        "list": ["/event/asset/img/m-l2-1.jpg", "/event/asset/img/m-l2-2.jpg"],
+        "pro": "/ppc/asset/img/m-s-2.jpg",
+        "list": ["/ppc/asset/img/m-l2-1.jpg", "/ppc/asset/img/m-l2-2.jpg"],
         "status": 2
     },
     "m3": {
         "type": "model",
-        "pro": "/event/asset/img/m-s-3.jpg",
-        "list": ["/event/asset/img/m-l3-1.jpg", "/event/asset/img/m-l3-2.jpg"],
+        "pro": "/ppc/asset/img/m-s-3.jpg",
+        "list": ["/ppc/asset/img/m-l3-1.jpg", "/ppc/asset/img/m-l3-2.jpg"],
         "status": 2
     },
     "m4": {
         "type": "model",
-        "pro": "/event/asset/img/m-s-4.jpg",
-        "list": ["/event/asset/img/m-l4-1.jpg", "/event/asset/img/m-l4-2.jpg"],
+        "pro": "/ppc/asset/img/m-s-4.jpg",
+        "list": ["/ppc/asset/img/m-l4-1.jpg", "/ppc/asset/img/m-l4-2.jpg"],
         "status": 2
     },
     "m5": {
         "type": "model",
-        "pro": "/event/asset/img/m-s-5.jpg?v=1",
-        "list": ["/event/asset/img/m-l5-1.jpg", "/event/asset/img/m-l5-2.jpg", "/event/asset/img/m-l5-3.jpg"],
+        "pro": "/ppc/asset/img/m-s-5.jpg?v=1",
+        "list": ["/ppc/asset/img/m-l5-1.jpg", "/ppc/asset/img/m-l5-2.jpg", "/ppc/asset/img/m-l5-3.jpg"],
         "status": 2
     },
     "m6": {
         "type": "model",
-        "pro": "/event/asset/img/m-s-6.jpg",
-        "list": ["/event/asset/img/m-l6-1.jpg", "/event/asset/img/m-l6-2.jpg", "/event/asset/img/m-l6-3.jpg"],
+        "pro": "/ppc/asset/img/m-s-6.jpg",
+        "list": ["/ppc/asset/img/m-l6-1.jpg", "/ppc/asset/img/m-l6-2.jpg", "/ppc/asset/img/m-l6-3.jpg"],
         "status": 2
     }
 }
@@ -568,7 +568,7 @@ function getInfo(key){
             
 
             if(a.type == "video"){
-                swiperHTML = rosso.creatMedia("infoVideo", a.list[0], false, "/event/asset/img/info-poster.jpg");  // _id, _url, _ap, _poster
+                swiperHTML = rosso.creatMedia("infoVideo", a.list[0], false, "/ppc/asset/img/info-poster.jpg");  // _id, _url, _ap, _poster
                 $(".infovideMask").addClass("show");
             }else{
                 swiperHTML = $.map(a.list, function(c, d){
