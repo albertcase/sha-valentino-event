@@ -1,0 +1,726 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>ROSSO VALENTINO</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="format-detection" content="telephone=no">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="landscape">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="landscape">
+
+	<!--禁用手机号码链接(for iPhone)-->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0,minimal-ui" />
+	<!--自适应设备宽度-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!--控制全屏时顶部状态栏的外，默认白色-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="Keywords" content="">
+	<meta name="Description" content="...">
+    <link rel="stylesheet" type="text/css" href="/ppc/asset/css/all.min.css?v=09">
+    <script type="text/javascript" src="/ppc/asset/js/all.min.js"></script>
+    <script type="text/javascript" src="http://valentinowechat.samesamechina.com/api/v1/js/60c4349e-c302-4313-9fa8-37a8ebd59853/wechat"></script>
+
+    <script type="text/javascript">
+        function isWeiXin(){
+            var ua = window.navigator.userAgent.toLowerCase();
+            if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        var browser={  
+            versions:function(){   
+                   var u = navigator.userAgent, app = navigator.appVersion;   
+                   return {//移动终端浏览器版本信息   
+                        trident: u.indexOf('Trident') > -1, //IE内核  
+                        presto: u.indexOf('Presto') > -1, //opera内核  
+                        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核  
+                        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核  
+                        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端  
+                        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端  
+                        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器  
+                        iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器  
+                        iPad: u.indexOf('iPad') > -1, //是否iPad    
+                        webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部  
+                    };  
+                 }(),  
+                 language:(navigator.browserLanguage || navigator.language).toLowerCase()  
+        }   
+          
+        if(browser.versions.mobile || browser.versions.ios || browser.versions.android ||   
+            browser.versions.iPhone || browser.versions.iPad){    
+            // if(!isWeiXin()){
+            //     location.href = "weibo.html"
+            // }    
+        }else{
+            location.href = "pc.html"
+        }
+    </script>
+
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?d7d1af7688a53ead0361f6fbfe4c00c8";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
+</head>
+<body>
+
+<div class="loading">
+    <div class="cssload-loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<!-- test2 -->
+<div id="dreambox">
+
+    <!-- 过度视频 -->
+    <div id="commingsoon">
+        <div class="videoCon" id="transitionFrame"></div>
+    </div>
+
+    <!-- 首页视频 -->
+    <div class="section" id="video">
+        <div class="videoMask"></div>
+        <div class="videoCon" id="homeFrame"></div>
+    </div>
+
+    <!-- 过渡页面 -->
+    <div id="home"></div>
+
+    <!-- 产品列表swiper -->
+    <div class="section" id="pro" style="left: 100%">
+        
+        <a href="javascript:void(0);" class="buyBtn">
+            <img src="/ppc/asset/img/buy.jpg" ontouchstart="this.src='/ppc/asset/img/buy_active.jpg'" ontouchend="this.src='/ppc/asset/img/buy.jpg'" width="100%;" />
+        </a>
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background:url(/ppc/asset/img/p1.jpg) center no-repeat; background-size: auto 100%;">
+                    <a href="javascript:void(0);" data-type="p1"></a>
+                    <a href="javascript:void(0);" data-type="p2"></a>
+                    <a href="javascript:void(0);" data-type="p3"></a>
+
+                    <div class="textTips">
+                        <img src="/ppc/asset/img/tips.png" width="100%;" />
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background:url(/ppc/asset/img/p2.jpg) center no-repeat; background-size: auto 100%;">
+                    <a href="javascript:void(0);" data-type="m1"></a>
+                    <a href="javascript:void(0);" data-type="m2"></a>
+                    <a href="javascript:void(0);" data-type="m3"></a>
+
+                    <div class="textTips">
+                        <img src="/ppc/asset/img/tips.png" width="100%;" />
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background:url(/ppc/asset/img/p3.jpg) center no-repeat; background-size: auto 100%;">
+                    <a href="javascript:void(0);" data-type="m4"></a>
+                    <a href="javascript:void(0);" data-type="m5"></a>
+                    <a href="javascript:void(0);" data-type="m6"></a>
+
+                    <div class="textTips">
+                        <img src="/ppc/asset/img/tips.png" width="100%;" />
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background:url(/ppc/asset/img/p4.jpg) center no-repeat; background-size: auto 100%;">
+                    <img src="/ppc/asset/img/p4.jpg" height="100%" style="opacity: 0;">
+                    <div class="textTips">
+                        <img src="/ppc/asset/img/tips-2.png" width="100%;" />
+                    </div>
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+    </div>
+
+
+
+
+    <!-- 售完 -->
+    <div class="qrcode" id="saleout">
+        <img src="" sourcesrc="/ppc/asset/img/qrcode_saleout.png" height="100%" />
+    </div>
+
+    <!-- ec -->
+    <div class="qrcode" id="ec">
+        <img src="" sourcesrc="/ppc/asset/img/qrcode_ec.png" height="100%" />
+    </div>
+
+    <!-- 预定 -->
+    <div class="qrcode" id="reservation">
+        <img src="" sourcesrc="/ppc/asset/img/qrcode_reservation.png" height="100%" />
+    </div>
+
+    <!-- list -->
+    <div class="section" id="list">
+        <a href="javascript:;" class="close">
+            <img src="" sourcesrc="/ppc/asset/img/close.png?v=01" width="100%">
+        </a>
+        <dl>
+            <dt>
+                <div class='infovideMask'>
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <svg version="1.1" id="PLAY" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="67px" fill="#fff" height="67px" style="opacity: .7;" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                    <path d="M32,5c14.888,0,27,12.112,27,27S46.888,59,32,59S5,46.888,5,32S17.112,5,32,5 M32,2C15.433,2,2,15.432,2,32
+                        c0,16.568,13.433,30,30,30s30-13.432,30-30C62,15.432,48.567,2,32,2L32,2z"/>
+                    <path d="M43.987,28.745L28.013,18.232C25.256,16.418,23,17.635,23,20.935V43.06c0,3.3,2.259,4.521,5.021,2.714l15.959-10.444
+                        C46.741,33.521,46.744,30.559,43.987,28.745z M41.858,33.124l-14.185,9.283C26.753,43.01,26,42.603,26,41.503V22.491
+                        c0-1.1,0.752-1.505,1.671-0.9l14.19,9.338C42.78,31.533,42.779,32.521,41.858,33.124z"/>
+                    </svg>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper" id="proSwiper">
+                        
+                    </div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+            </dt>
+            <dd>
+                <div class="modelInfo">
+                    <a href="javascript:void(0);" class="btn reserveBtn">
+                        <img src="" sourcesrc="/ppc/asset/img/reserve_btn.png" ontouchstart="this.src='/ppc/asset/img/reserve_btn_active.jpg'" ontouchend="this.src='/ppc/asset/img/reserve_btn.png'" width="100%">
+                    </a>
+                    <a href="javascript:void(0);" class="btn nowbuyBtn">
+                        <img src="" sourcesrc="/ppc/asset/img/nowbuy_btn.jpg" width="100%">
+                    </a>
+                </div>
+                <img src="/ppc/asset/img/m-s-1.jpg" id="pro-s" height="100%">
+            </dd>
+        </dl>
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<script type="text/javascript" src="asset/js/public.min.js?v=02"></script>
+<script type="text/javascript">
+    var allimg = [
+        "/ppc/asset/img/arr-l.png",
+        "/ppc/asset/img/arr-r.png",
+        "/ppc/asset/img/buy.jpg",
+        "/ppc/asset/img/buy_active.jpg",
+        "/ppc/asset/img/close.png",
+        "/ppc/asset/img/home.jpg",
+        "/ppc/asset/img/info-poster.jpg",
+        "/ppc/asset/img/m-l-1.jpg",
+
+        "/ppc/asset/img/m-s-1.jpg",
+        "/ppc/asset/img/m-s-2.jpg",
+        "/ppc/asset/img/m-s-3.jpg",
+        "/ppc/asset/img/m-s-4.jpg",
+        "/ppc/asset/img/m-s-5.jpg",
+        "/ppc/asset/img/m-s-6.jpg",
+
+        "/ppc/asset/img/nowbuy_btn.jpg",
+        "/ppc/asset/img/nowbuy_btn_active.jpg",
+
+        "/ppc/asset/img/p-s-1.jpg",
+        "/ppc/asset/img/p-s-2.jpg",
+        "/ppc/asset/img/p-s-3.jpg",
+
+        "/ppc/asset/img/p1.jpg",
+        "/ppc/asset/img/p2.jpg",
+        "/ppc/asset/img/p3.jpg",
+        "/ppc/asset/img/p4.jpg",
+
+        "/ppc/asset/img/pbg.jpg",
+        "/ppc/asset/img/poster.jpg",
+        "/ppc/asset/img/qrcode_bg.png",
+        "/ppc/asset/img/qrcode_ec.png",
+        "/ppc/asset/img/qrcode_reservation.png",
+        "/ppc/asset/img/qrcode_saleout.png",
+
+        "/ppc/asset/img/reserve_btn.png",
+        "/ppc/asset/img/reserve_btn_active.jpg",
+        "/ppc/asset/img/tips.png",
+        "/ppc/asset/img/tips-2.png",
+        "/ppc/asset/img/share.jpg",
+        "/ppc/asset/img/rosso-beginning.jpg",
+
+        "/ppc/asset/img/p-l1-1.jpg",
+        "/ppc/asset/img/p-l1-2.jpg",
+        "/ppc/asset/img/p-l2-1.jpg",
+        "/ppc/asset/img/p-l2-2.jpg",
+        "/ppc/asset/img/p-l2-3.jpg",
+        "/ppc/asset/img/p-l3-1.jpg",
+        "/ppc/asset/img/p-l3-2.jpg",
+
+        "/ppc/asset/img/m-l1-1.jpg",
+        "/ppc/asset/img/m-l1-2.jpg",
+        "/ppc/asset/img/m-l1-3.jpg",
+        "/ppc/asset/img/m-l2-1.jpg",
+        "/ppc/asset/img/m-l2-2.jpg",
+        "/ppc/asset/img/m-l3-1.jpg",
+        "/ppc/asset/img/m-l3-2.jpg",
+        // "/ppc/asset/img/m-l3-3.jpg",
+        "/ppc/asset/img/m-l4-1.jpg",
+        "/ppc/asset/img/m-l4-2.jpg",
+        "/ppc/asset/img/m-l5-1.jpg",
+        "/ppc/asset/img/m-l5-2.jpg",
+        "/ppc/asset/img/m-l5-3.jpg",
+        "/ppc/asset/img/m-l6-1.jpg",
+        "/ppc/asset/img/m-l6-2.jpg",
+        "/ppc/asset/img/m-l6-3.jpg",
+    ], vbl = 0,setTime_transition;
+
+    for(var i = 0; i<37; i++){
+        allimg.push("/ppc/asset/frame/home/home_000" + (i < 10 ? ("0" + i) : i) + ".jpg");
+        allimg.push("/ppc/asset/frame/transition/01_final_000" + (i < 10 ? ("0" + i) : i) + ".jpg");
+    }
+
+    document.body.addEventListener('touchmove', function(e) {
+        e.preventDefault()
+    });
+
+    var UA = window.navigator.userAgent;
+    var isAndroid = /(^| |\()(android)(;| |\/|$)/i.test(UA);
+    var isIOS = /(^| |\()(iPhone|iPad)(;| |\/|$)/i.test(UA);
+    var isIPad = /(^| |\()(iPad)(;| |\/|$)/i.test(UA);
+
+
+    function valentino(){
+        var self = this;
+        this.init = function(){   // 初始化执行函数
+            self.valentinoEvent();
+
+            $(".videoMask").on("click", function(e){
+                var a = 0;
+                var setTime = setInterval(function(){
+                    if(a > 37){
+                        clearTimeout(setTime);
+
+                        $("#home").fadeIn("100");
+                        setTimeout(function(){
+                            $("#home").stop().animate({"left": "-100%"});
+                            self.sectionChange("pro");
+                            $("#pro").stop().animate({"left": "0"});
+
+                            var swiper = new Swiper('#pro .swiper-container', {
+                                nextButton: '#pro .swiper-button-next',
+                                prevButton: '#pro .swiper-button-prev',
+                                spaceBetween: 30
+                            });
+                            
+                        }, 2000);
+
+
+                    }else{
+                        self.aniFrame("homeFrame", "home/home_000" + (a < 10 ? ("0" + a) : a));
+                        a++;
+                    }
+                }, 60);
+
+
+                $(".videoMask").fadeOut("slow");
+
+                //_hmt.push(['_trackEvent', 'media', '引导页视频 ｜ home-video']);
+                e.preventDefault();
+
+            })
+        };
+        this.sectionChange = function(n){        // section 页面切换
+            $(".section").removeClass("show transition");
+            $("#" + n).addClass('show transition');
+        }
+        this.aniFrame = function(flashNode, imgname){
+            // console.log(imgname);
+            $("#" + flashNode).css({"background": "url('/ppc/asset/frame/" + imgname + ".jpg') center / 100% no-repeat"});
+        }
+
+        this.transitionAni = function(){
+            var a = 0;
+            setTime_transition = setInterval(function(){
+ 
+                    if(a > 37){
+                        a = 0;
+                    }else{
+                        self.aniFrame("transitionFrame", "transition/01_final_000" + (a < 10 ? ("0" + a) : a));
+                        a++;
+                    }
+                
+            }, 100);
+            
+        }
+    }
+
+    valentino.prototype.valentinoEvent = function(){
+        var self = this;
+
+        this.homeMedia = function(){
+
+
+                
+        
+          
+            
+
+            // self.eventTester(hv, "ended", function(){
+            //     //self.sectionChange("home");
+            //     $("#homeVideo").remove();
+            //     $("#home").fadeIn("100");
+            //     setTimeout(function(){
+            //         $("#home").stop().animate({"left": "-100%"});
+            //         self.sectionChange("pro");
+            //         $("#pro").stop().animate({"left": "0"});
+
+            //         var swiper = new Swiper('#pro .swiper-container', {
+            //             nextButton: '#pro .swiper-button-next',
+            //             prevButton: '#pro .swiper-button-prev',
+            //             spaceBetween: 30
+            //         });
+                    
+            //     }, 2000);
+            //     //console.log("ended");
+            // });
+
+        }
+
+    }
+
+    var rosso = new valentino();
+
+
+
+
+
+
+/* 计数函数 */
+
+var counts = 0, reqa, tType;
+var block = document.querySelector('.p1');
+
+function counter(){
+    if(counts == 20){
+        csvideoFunStart(tType);
+        counts += 1;
+    }else if(counts > 20){
+
+    }else{
+        counts += 1;
+    }
+    //console.log(counts);
+    reqa = requestAnimationFrame(counter);
+}
+
+
+var csv = document.getElementById("commingSoonVideo");
+
+$("#pro .swiper-slide").delegate("a", "touchstart", function(e){
+
+        counts = 0;
+        tType = $(this).attr("data-type");
+        reqa = requestAnimationFrame(counter);
+
+        _hmt.push(['_trackEvent', 'link', '点击产品 ｜' + tType ]);
+        e.preventDefault();
+        //return false;
+})
+
+$("#pro .swiper-slide").delegate("a", "touchend", function(e){
+        if(counts >= 15){
+            csvideoFunEnd();
+        };
+        window.cancelAnimationFrame(reqa);
+        e.preventDefault();
+        //return false;
+})
+
+function csvideoFunStart(t){
+    
+    rosso.transitionAni();
+
+    $("#commingsoon").css({"visibility": "visible"}).fadeIn(); 
+    _hmt.push(['_trackEvent', 'media', '过渡视频 ｜ transition-video' ]);
+}
+
+function csvideoFunEnd(){
+    getInfo(tType);
+    rosso.sectionChange("list");
+
+    $("#commingsoon").css({"visibility": "hidden"}).fadeOut(function(){
+        clearTimeout(setTime_transition);
+    });
+    
+}
+
+
+
+
+// ,
+//     "p2": {
+//         "type": "video",
+//         "pro": "/event/asset/img/p-s-2.jpg",
+//         "list": ["/event/video/test.mp4"],
+//         "status": 1
+//     }
+
+
+/* list.html */
+
+var listData = {
+    "p1": {
+        "type": "pro",
+        "pro": "/event/asset/img/p-s-1.jpg",
+        "list": ["/event/asset/img/p-l1-1.jpg", "/event/asset/img/p-l1-2.jpg"],
+        "status": 2
+    },
+    "p2": {
+        "type": "pro",
+        "pro": "/event/asset/img/p-s-2.jpg",
+        "list": ["/event/asset/img/p-l2-1.jpg", "/event/asset/img/p-l2-2.jpg", "/event/asset/img/p-l2-3.jpg"],
+        "status": 1
+    },
+    "p3": {
+        "type": "pro",
+        "pro": "/event/asset/img/p-s-3.jpg",
+        "list": ["/event/asset/img/p-l3-1.jpg", "/event/asset/img/p-l3-2.jpg"],
+        "status": 2
+    },
+    "m1": {
+        "type": "model",
+        "pro": "/event/asset/img/m-s-1.jpg",
+        "list": ["/event/asset/img/m-l1-1.jpg", "/event/asset/img/m-l1-2.jpg", "/event/asset/img/m-l1-3.jpg"],
+        "status": 2
+    },
+    "m2": {
+        "type": "model",
+        "pro": "/event/asset/img/m-s-2.jpg",
+        "list": ["/event/asset/img/m-l2-1.jpg", "/event/asset/img/m-l2-2.jpg"],
+        "status": 2
+    },
+    "m3": {
+        "type": "model",
+        "pro": "/event/asset/img/m-s-3.jpg",
+        "list": ["/event/asset/img/m-l3-1.jpg", "/event/asset/img/m-l3-2.jpg"],
+        "status": 2
+    },
+    "m4": {
+        "type": "model",
+        "pro": "/event/asset/img/m-s-4.jpg",
+        "list": ["/event/asset/img/m-l4-1.jpg", "/event/asset/img/m-l4-2.jpg"],
+        "status": 2
+    },
+    "m5": {
+        "type": "model",
+        "pro": "/event/asset/img/m-s-5.jpg?v=1",
+        "list": ["/event/asset/img/m-l5-1.jpg", "/event/asset/img/m-l5-2.jpg", "/event/asset/img/m-l5-3.jpg"],
+        "status": 2
+    },
+    "m6": {
+        "type": "model",
+        "pro": "/event/asset/img/m-s-6.jpg",
+        "list": ["/event/asset/img/m-l6-1.jpg", "/event/asset/img/m-l6-2.jpg", "/event/asset/img/m-l6-3.jpg"],
+        "status": 2
+    }
+}
+
+
+
+var swiperHTML, prosUrl, proStatus, infoSwiper;
+
+infoSwiper = new Swiper('#list .swiper-container', {
+    nextButton: '#list .swiper-button-next',
+    prevButton: '#list .swiper-button-prev',
+    observer: true
+}); 
+
+// console.log(key);
+function getInfo(key){
+
+    $.map(listData, function(a, b){
+        if(b == key){
+            if(a.type == "video" || b == "p2"){ // a.type == "pro" || a.type == "video"
+                $(".modelInfo").addClass("proInfo");
+                $(".modelInfo .btn").hide();
+                $(".nowbuyBtn").show();
+            }else if(a.type == "pro"){
+                $(".modelInfo").addClass("proInfo");
+                $(".modelInfo .btn").hide();
+                $(".reserveBtn").show();
+            }else{
+                $(".modelInfo").removeClass("proInfo");
+                $(".modelInfo .btn").hide();
+                $(".reserveBtn").show();
+            }
+
+            prosUrl = a.pro;
+            proStatus = a.status;
+            
+
+            if(a.type == "video"){
+                swiperHTML = rosso.creatMedia("infoVideo", a.list[0], false, "/event/asset/img/info-poster.jpg");  // _id, _url, _ap, _poster
+                $(".infovideMask").addClass("show");
+            }else{
+                swiperHTML = $.map(a.list, function(c, d){
+                    return '<div class="swiper-slide">' +
+                               '<img src="'+ c +'" />' +
+                           '</div>'
+                }).join("");
+                $(".infovideMask").removeClass("show");
+            }
+            
+        }
+    })
+
+    $("#pro-s").attr({"src": prosUrl, "data-status": proStatus});
+
+
+
+    $("#proSwiper").html(swiperHTML);
+
+
+    infoSwiper.update(true);
+
+
+    infoSwiper.slideTo(0, 100, false);
+
+    // info视频点击播放事件
+    
+    $("#list").delegate(".infovideMask", "click", function(e){
+        var iv = document.getElementById("infoVideo");
+        if($(".infovideMask").hasClass("show")){
+            $(".infovideMask").removeClass("show");
+        }
+        
+        iv.play();
+        rosso.eventTester(iv, "ended", function(){
+            if(!$(".infovideMask").hasClass("show")){
+                $(".infovideMask").addClass("show");
+            }
+        });
+        rosso.eventTester(iv, "pause", function(){
+            if(!$(".infovideMask").hasClass("show")){
+                $(".infovideMask").addClass("show");
+            }
+        });
+        _hmt.push(['_trackEvent', 'media', '产品详细页面视频 ｜ info-video' ]);
+        e.preventDefault();
+    })
+    //$("#proSwiper").removeAttr("style");
+     
+}
+
+
+$(".btn").on("click", function(e){
+    var proStatusVal = $("#pro-s").attr("data-status");
+    if(proStatusVal == 0){
+        $("#saleout").addClass('show transition');
+    }else if(proStatusVal == 1){
+        //$("#ec").addClass('show transition');
+        if(isWeiXin()){
+            //window.location.href = "http://rossovalentino.samesamechina.com/ec/";
+        }else{
+            //alert(6);
+        }
+        
+    }else{
+        if(isWeiXin()){
+            window.location.href = "http://rossovalentino.samesamechina.com/reservation";
+        }else{
+            //alert(9);
+        }
+        //$("#reservation").addClass('show transition');
+    }
+
+    _hmt.push(['_trackEvent', 'btn', '二维码弹层状态 ｜ ' + proStatusVal ]);
+    e.preventDefault()
+})
+
+$(".buyBtn").on("click", function(){
+    getInfo("p2");
+    rosso.sectionChange("list");
+    _hmt.push(['_trackEvent', 'btn', '立即抢购按钮 ｜ nowbuy' ]);
+    //$("#ec").addClass('show transition');
+})
+
+$(".qrcode").on("click", function(e){
+    $(".qrcode").removeClass("show transition");  
+    e.preventDefault()
+})
+
+
+$(".qrcode img").on("click", function(e){
+    e.preventDefault()
+})
+
+
+
+
+
+// loading 执行
+pfun.loadingFnDoing(allimg, function(){
+    rosso.sectionChange("video");
+    rosso.init();
+    $(".loading").css({"visibility": "hidden"});
+    pfun.init();
+})
+
+
+
+
+$(".close").on("click", function(e){
+    var iv = document.getElementById("infoVideo");
+        
+        if(iv){
+           iv.pause(); 
+           $(".infovideMask").removeClass("show");
+        }
+
+        rosso.sectionChange('pro');
+
+        _hmt.push(['_trackEvent', 'link', '关闭link ｜ close' ]);
+        e.preventDefault();
+})
+
+
+// alert("W :" + $(window).width());
+// alert("H :" + $(window).height());
+
+</script>
+
+
+
+<!-- 362 736
+
+375 603
+
+667 323 -->
+
+
+
+<!-- 横屏代码 -->
+<div id="orientLayer" class="mod-orient-layer">
+    <div class="mod-orient-layer__content">
+        <i class="icon mod-orient-layer__icon-orient"></i>
+        <div class="mod-orient-layer__desc">请在解锁模式下使用横屏浏览</div>
+    </div>
+</div>
+
+</body>
+</html>
