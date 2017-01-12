@@ -137,12 +137,6 @@
                         <img src="/ppc/asset/img/tips.png" width="100%;" />
                     </div>
                 </div>
-                <div class="swiper-slide" style="background:url(/ppc/asset/img/p4.jpg) center no-repeat; background-size: auto 100%;">
-                    <img src="/ppc/asset/img/p4.jpg" height="100%" style="opacity: 0;">
-                    <div class="textTips">
-                        <img src="/ppc/asset/img/tips-2.png" width="100%;" />
-                    </div>
-                </div>
             </div>
             <!-- Add Arrows -->
             <div class="swiper-button-next swiper-button-white"></div>
@@ -494,7 +488,7 @@ var listData = {
         "type": "pro",
         "pro": "/event/asset/img/p-s-2.jpg",
         "list": ["/event/asset/img/p-l2-1.jpg", "/event/asset/img/p-l2-2.jpg", "/event/asset/img/p-l2-3.jpg"],
-        "status": 1
+        "status": 2
     },
     "p3": {
         "type": "pro",
@@ -555,7 +549,7 @@ function getInfo(key){
 
     $.map(listData, function(a, b){
         if(b == key){
-            if(a.type == "video" || b == "p2"){ // a.type == "pro" || a.type == "video"
+            if(a.type == "video"){ // a.type == "pro" || a.type == "video"
                 $(".modelInfo").addClass("proInfo");
                 $(".modelInfo .btn").hide();
                 $(".nowbuyBtn").show();
@@ -632,20 +626,20 @@ $(".btn").on("click", function(e){
     if(proStatusVal == 0){
         $("#saleout").addClass('show transition');
     }else if(proStatusVal == 1){
-        //$("#ec").addClass('show transition');
-        if(isWeiXin()){
-            //window.location.href = "http://rossovalentino.samesamechina.com/ec/";
-        }else{
-            //alert(6);
-        }
+        $("#ec").addClass('show transition');
+        // if(isWeiXin()){
+        //     //window.location.href = "http://rossovalentino.samesamechina.com/ec/";
+        // }else{
+        //     //alert(6);
+        // }
         
     }else{
-        if(isWeiXin()){
-            window.location.href = "http://rossovalentino.samesamechina.com/reservation";
-        }else{
-            //alert(9);
-        }
-        //$("#reservation").addClass('show transition');
+        // if(isWeiXin()){
+        //     window.location.href = "http://rossovalentino.samesamechina.com/reservation";
+        // }else{
+        //     //alert(9);
+        // }
+        $("#reservation").addClass('show transition');
     }
 
     _hmt.push(['_trackEvent', 'btn', '二维码弹层状态 ｜ ' + proStatusVal ]);
