@@ -188,12 +188,12 @@ body{
 }
 
 #list dl dd { 
-    width: 25%;
+    width: 29%;
     float: left;
 }
 
 #list dl dt { 
-    width: 75%;
+    width: 71%;
     float: left;
     overflow: hidden;
 }
@@ -215,7 +215,7 @@ body{
     width: 7%;
     position: absolute;
     right: 3%;
-    top: 3%;  
+    top: 7%;  
     z-index: 10;
 }
 

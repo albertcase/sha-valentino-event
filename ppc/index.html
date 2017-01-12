@@ -488,7 +488,7 @@ var listData = {
         "type": "pro",
         "pro": "/event/asset/img/p-s-2.jpg",
         "list": ["/event/asset/img/p-l2-1.jpg", "/event/asset/img/p-l2-2.jpg", "/event/asset/img/p-l2-3.jpg"],
-        "status": 2
+        "status": 0
     },
     "p3": {
         "type": "pro",
@@ -549,7 +549,7 @@ function getInfo(key){
 
     $.map(listData, function(a, b){
         if(b == key){
-            if(a.type == "video"){ // a.type == "pro" || a.type == "video"
+            if(a.type == "video" || b == "p2"){ // a.type == "pro" || a.type == "video"
                 $(".modelInfo").addClass("proInfo");
                 $(".modelInfo .btn").hide();
                 $(".nowbuyBtn").show();
